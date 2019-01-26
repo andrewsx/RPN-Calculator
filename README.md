@@ -1,39 +1,39 @@
 # RPN-Calculator
-Postfix Calculator
+
 The purpose is to design a program to implement a calculator that will perform an infix to postfix conversion
 and then evaluate the resulting postfix expression.
 The calculator is implemented in two parts:
 A Converter class that will convert the input string to postfix expression.
 A Calculator class that will evaluate the postfix expression.
 
-• The Calculator class will instantiate an object of the Converter class in order to
+The Calculator class will instantiate an object of the Converter class in order to
 have the infix expression converted to a postfix expression.
-• An additional operator, "^", will be added. Java has a built in exponent function:
+An additional operator, "^", will be added. Java has a built in exponent function:
 Math.pow(x, y). Use this to evaluate x^y.
-• Parentheses are legal in the infix expression (Note: the parentheses are needed in
+Parentheses are legal in the infix expression (Note: the parentheses are needed in
 the infix expression. After the Converter class' algorithm converts the expression
 to postfix, it will no longer have parentheses.
 In postfix notation, the operator is written after the two operands. An expression with
 multiple operators is evaluated in the same way, from left to right with each operator
 applied to the two previous operands.
 
-The PostFixConverter class
+
 The purpose of the PostFixConverter class is to take an infix expression that is generated
 by the user, and convert it to a postfix expression that can be evaluated using code. The
 Converter class uses a stack to accomplish this. Here is how it works:
-• When the Converter class is instantiated, a String is passed representing the infix
+When the Converter class is instantiated, a String is passed representing the infix
 expression entered by the user. This should be saved as an instance
 variable.
-• The method that does all the work in the Converter class should be called
+The method that does all the work in the Converter class should be called
 toPostFix(). It will convert the infix expression to a postfix expression. The
 postfix expression should be a string that can be evaluated by the calculator. Each
 operator and operand should be separated by spaces. This is not necessarily true
 of the input (i.e., the original infix expression might look like “2+2” instead of “2
 + 2”).
-• The first thing the converter class does is to tokenize the input string into a list of
+The first thing the converter class does is to tokenize the input string into a list of
 tokens representing operators and operands. Parenthesis are also allowed in infix
-expressions, so "(" and ")" are valid tokens. This is done using the Parser class.
-• Once the input is tokenized, a stack is used to convert to a postfix expression.
+expressions, so "(" and ")" are valid tokens. This is done using the ParserHelper class.
+Once the input is tokenized, a stack is used to convert to a postfix expression.
 Here is the basic idea: create a stack and
 an output string. Read all of the tokens from left to right.
 The algorithm:
