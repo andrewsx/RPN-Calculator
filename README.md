@@ -28,8 +28,7 @@ The method that does all the work in the Converter class should be called
 toPostFix(). It will convert the infix expression to a postfix expression. The
 postfix expression should be a string that can be evaluated by the calculator. Each
 operator and operand should be separated by spaces. This is not necessarily true
-of the input (i.e., the original infix expression might look like “2+2” instead of “2
-+ 2”).
+of the input.
 The first thing the converter class does is to tokenize the input string into a list of
 tokens representing operators and operands. Parenthesis are also allowed in infix
 expressions, so "(" and ")" are valid tokens. This is done using the ParserHelper class.
