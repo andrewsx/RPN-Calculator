@@ -1,4 +1,4 @@
-# RPN-Calculator
+# Reverse Polish Notation Calculator
 
 The purpose is to design a program to implement a calculator that will perform an infix to postfix conversion
 and then evaluate the resulting postfix expression.
