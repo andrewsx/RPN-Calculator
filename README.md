@@ -35,7 +35,7 @@ expressions, so "(" and ")" are valid tokens. This is done using the ParserHelpe
 Once the input is tokenized, a stack is used to convert to a postfix expression.
 Here is the basic idea: create a stack and
 an output string. Read all of the tokens from left to right.
-The algorithm:
+The algorithm proceeds as follows:
 1. Whenever you come upon an operand, append it onto the end of the output
 string.
 2. Whenever you come upon an operator, look at the top of the stack to make
